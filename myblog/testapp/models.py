@@ -10,6 +10,12 @@ class Dog(models.Model):
     age = models.IntegerField()
     
     def __str__(self):
-        return self.name +', '+ str(self.age)
+       return self.name +', '+ str(self.age)
 
+class Cat(models.Model):
+    name= models.CharField(max_length=250)
+    age= models.IntegerField()
+
+    def __str__(self):
+        return self.name + ', '+ str(self.age)
 
